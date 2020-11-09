@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    color: #fff;
+}
+
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    *zoom:1;
+}
+
+.close {
+    position: absolute;
+    top: 11%;
+    right: 12%;
+    font-size: 28px;
+    color: black;
+}
+
+.movieDetail {
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: 500px;
+    margin: 100px auto;
+    border: 1px solid black; 
+    background: no-repeat;
+    background-size: 100% 500px;
+}
+
+.cover{
+    position:absolute;
+    top: 0;right: 0;left: 0;bottom: 0;
+    height: 100%;
+    width: 100%;
+    background:rgba(0, 0,0, 0.7);
+    z-index: 1;
+    
+}
+
+/* .backgroudImg {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+} */
+
+.containerDiv{
+    position:absolute;
+    display: flex; 
+    width: 90%;
+    height: 80%;
+    margin: 50px 5%;
+    z-index: 100;
+}
+
+.leftImg{
+    /* position: absolute; */
+    flex: 35%;
+    display: block;  
+    height: 100%;
+    width: 30%;
+}
+
+.right{
+    flex: 65%;
+    padding: 0  5%  0 10%;
+    font-size: 18px;
+    color: white;
+}
+
+h1 {
+    /* display: inline-block;
+    margin-top:15%;
+    margin-left: 20%; */
+    /* color: #fff; */
+    margin: 0px 0;
+}
+
+.typeMovie {
+    margin: 20px 0;
+}
+
+.typeMovie li {
+    float: left;
+    height: 30px;
+    padding: 0 5px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.release-date {
+    /* float: left; */
+    /* color: #fff; */
+    font-size: 30px;
+}
+
+.overview{
+    height: 100px;
+    width: 100%;
+    overflow:auto;
+    margin: 30px 0;
+    text-align: left;
+    
+}
+
+.production_companies {
+    width: 100%;
+    height: 100px;
+    background-color:grey;
+}
+
+.production {
+    float: left;
+    margin: 0 10px;
+}
+
+.productionImg {
+    flex: 35%;
+    height: 50%;
+    width: 30%;
+}

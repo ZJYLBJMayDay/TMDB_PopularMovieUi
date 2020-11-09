@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a{
+    text-decoration-line: none;
+}
+
+body {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    *zoom:1;
+}
+
+.bodyDiv {
+    height: 2000px;
+    /* background-color: pink; */
+}
+
+.configDiv {
+    position: relative;
+    display: none;
+    height: 2000px;
+}
+
+.content {
+    height: 80px;
+    width: 100%;
+    border-bottom: 4px solid gainsboro;   
+}
+
+/* header .firstNav {
+    float: left;
+    height: 80%;
+    background-color: slateblue;
+}
+header .secondNav {
+    float: left;
+    width: 10%;
+    height: 80%;
+}
+header .thirdNav {
+    float: left;
+    width: 20%;
+    height: 80%;
+    background-color: gray;
+    display: none;
+}
+header a {
+    text-decoration: none; 
+    color: black;
+    border-bottom: 3px solid red; 
+    text-align: center;
+} */
+
+.logo img{
+    float: left;
+    height: 60px;
+    width: 60px;
+    margin-top: 10px;
+    margin-right: 30px;
+    border: 1px solid black;
+}
+
+.likeMovieDiv {
+    display: none;
+}
+
+.nav li {
+    position: relative;  
+    float: left;
+    margin: 10px 50px 10px 80px;
+}
+
+.nav li a {
+    position: absolute;   
+    display: block;
+    top: 20px;
+    left: 0;
+    font-size: 18px;
+    width: 100px;
+    height: 40px;
+    margin-right: 30px;
+    text-align: center;
+    line-height: 50px;
+    color: #333333;
+}
+
+.movieListA {
+    border-bottom:3px solid red;
+}
+
+.countNumber{
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    background-color: red;
+    color: white;
+}
+
+/* .nav li a:hover {
+    border-bottom:3px solid red;
+} */
+
+.config{
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 170px;
+    width: 100px;
+    height: 50px;
+    color: blue;
+    font-size: 25px;
+}
+
+h1 {
+    text-align: left;
+}
+
+.pageButtonDiv {
+    width: 100%;
+    height: 30px;
+    /* background-color: blue; */
+}
+
+.prevList {
+    width: 20%;
+    height: 100%;
+    /* align-items: center; */
+    text-align: right;
+    line-height: 30px;
+    float: left;
+}
+
+.pageNumber {
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    line-height: 30px;
+    float: left;
+}
+
+.nextList {
+    width: 20%;
+    height: 100%;
+    text-align: left;
+    line-height: 30px;
+    float: left;
+}
+
+.prevButton {
+    text-align: right;
+    /* align-items: center; */
+    vertical-align: middle;
+    /* line-height: 30px; */
+    /* disabled: disabled; */
+}
+
+.movieUl {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.likeMovieUl {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.likeMovieUl li {
+    position: relative;
+    float: left;
+    width: 18%;
+    height: 400px;
+    margin-right: 2.5%;
+    /* background-color: brown; */
+    margin-bottom: 10px;
+}
+
+.likeMovieUl li:nth-child(5n) {
+    margin-right: 0;
+}
+
+.likeMovieUl li img {
+    display: block;
+    cursor: pointer;
+    height: 80%;
+    width: 100%;
+    /* background-color: blue; */
+}
+.movieUl li p {
+    height: 10%;
+    width: 100%;
+}
+
+
+.movieUl li {
+    position: relative;
+    float: left;
+    width: 18%;
+    height: 400px;
+    margin-right: 2.5%;
+    /* background-color: brown; */
+    margin-bottom: 10px;
+}
+
+.movieUl li:nth-child(5n) {
+    margin-right: 0;
+}
+
+.movieUl li img {
+    display: block;
+    cursor: pointer;
+    height: 80%;
+    width: 100%;
+    /* background-color: blue; */
+}
+.movieUl li p {
+    height: 10%;
+    width: 100%;
+}
+
+.movieUl li:hover div{
+    display: block;
+}
+
+.movieUl li div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 10%;
+    width: 100%;
+    background-color: pink;
+    display: none;
+}
+
+.configUl {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top:200px;
+    right: 20px;
+}
+
+.configUl li {
+    /* position: absolute; */
+    height: 50px;
+    width: 100%;
+    /* top:10%;
+    right: 20%; */
+    margin: 20px auto;
+    background-color: gray;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.configDiv img {
+    /* float: right; */
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top:30px;
+    right: 1%;
+    /* border: 1px solid black; */
+}

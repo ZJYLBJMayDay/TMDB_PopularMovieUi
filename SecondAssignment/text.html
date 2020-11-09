@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            height: 500px;
+            width: 80%;
+            margin-top: 50px;
+            list-style-type: none;
+        }
+
+        li {
+            height: 30px;
+            width: 100%;
+            margin: 20px 0;
+            /* background-color: grey; */
+            line-height: 30px;
+            text-align: center;
+            /* text-decoration: none; */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li draggable="true" style="background-color: red;">红</li>
+        <li draggable="true" style="background-color: purple;">橙</li>
+        <li draggable="true" style="background-color: yellow;">黄</li>
+        <li draggable="true" style="background-color: green;">绿</li>
+        <li draggable="true" style="background-color: blue;">蓝</li>
+    </ul>
+
+    <script>
+        var ul = document.getElementsByTagName("ul")[0];
+        // 把ul设置为有效的放置目标
+        ul.ondragover = function (event) {
+          event.preventDefault();
+        };
+        var draging; // 存放被拖动元素
+        ul.ondragstart = function (event) {
+          draging = event.target;
+        }
+        ul.ondrop = function (event) {
+          var target = event.target; // 放置目标
+          if (target.nodeName === "LI" && target !== draging) {       
+            if (getIndex(draging) < getIndex(target)) {
+              target.parentNode.insertBefore(draging, target.nextSibling);
+            } else {
+              target.parentNode.insertBefore(draging, target);
+            }
+          }
+        };
+        // 获取当前元素index
+        function getIndex(el) {
+          var index = 0;
+          if (!el || !el.parentNode) {
+            return -1;
+          }
+          while (el = el.previousElementSibling) {
+            index++;
+          }
+          return index;
+        }
+    </script>
+</body>
+</html>
